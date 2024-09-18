@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.inicial{
+  display:flex;
+  color: #FFFFFF;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+}
+
+.esquerda{
+  width:50vw;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  /*opacidade apenas no background*/
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/imagem-fundo-cashgo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+
+.direita{
+  background: #FFFFFF;
+  width:50vw;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+
+.botao-titulo{
+  font-size:16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  background: #aae005;
+  width:270px;
+  height: 45px;
+  padding:0.7em;
+  display:flex;
+  justify-content:center;
+  border-radius: 25px;
+  color: #FFFFFF;
+  margin: 0.5px;
+}
+
+.botao-titulo:hover{
+  background: #a4ca31;
+}
+
+.imagem-vizinha-botao{
+  width: 30%;
+    height: 60px;
+}
+
+.parte-inf{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+h1{
+  font-weight: 600;
+  font-size:50px;
+  width: 25vw;
+  
+}
+
+.paragrafo{
+  width: 35vw;
+  margin: 35px 0px 35px 0px;
+  font-size: 17px;
+  gap: 1.5px;
+}
+
+h3{
+  color: #bfe34f;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+
+.form-content input{
+    width: 20vw;
+    min-width: 280px;
+    height: 30px;
+    border-bottom: 2px solid #999999;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-radius: 0px;
+    outline: none; /*tirar borda preta do input ao clicar*/
+    padding-left: 10px;
+    margin-top: 34px;
+}
+
+.span-message{
+  font-size: 12px;
+  display: flex;
+  color:#bd1717 ;
+  display: none;
+}
+
+.form-content input:hover{
+  border-bottom: 2px solid #bfe34f; 
+}
+
+.form-submit {
+    background: #FFFFFF;
+    color:  #bfe34f;
+    border-color:  #bfe34f;
+    height: 45px;
+    width: 20vw;
+    min-width: 280px;
+    border-radius: 20px;
+    text-shadow: none;
+    margin-top: 25px;
+}
+
+.imagem{
+    width: 150px;
+    height: 60px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+
+}
+
+
+/*.form{
+    margin-bottom: 5%;
+}*/
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .inicial{
+    flex-direction: column;
+  }
+
+  .direita{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .esquerda{
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .botao-titulo{
+    width: 80vw;
+    font-size: 15px;
+  }
+
+  .paragrafo{
+    width: 70vw;
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+  
+  .parte-inf{
+    flex-direction: column;
+  }
+
+  .imagem-vizinha-botao{
+    height: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 991px) {
+  .inicial{
+    flex-direction: column;
+  }
+
+  .direita{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .esquerda{
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .botao-titulo{
+    width: 300px;
+    font-size: 15px;
+  }
+
+  .paragrafo{
+    width: 90vw;
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+  }
+
+  h1{
+    font-size: 35px;
+    width: 90vw;
+  }
+  
+  .imagem-vizinha-botao{
+    height: 40px;
+  }
+}
+
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .botao-titulo{
+    width: 250px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  .paragrafo{
+    width: 40vw;
+    font-size: 13px;
+    margin: 20px 0 20px 0;
+  }
+
+  .botao-titulo{
+    height: 30px;
+    font-size: 12.5px;
+    width: 200px;
+  }
+
+  .imagem-vizinha-botao{
+    height: 30px;
+  }
+
+}
+
+@media (min-width: 1201px)  {
+}
